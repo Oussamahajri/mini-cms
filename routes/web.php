@@ -31,3 +31,10 @@ Route::get('/heure', function () {
         'heure' => now()->format('H:i'),
     ]);
 });
+
+Route::get('/a-propos', function () {
+    return view('a-propos', [
+        'auteur' => 'Oussama Hajri',
+        'groupe' => 'MDW32',
+    ]);
+});
